@@ -1,0 +1,28 @@
+{
+  "name": "sea_vesion",
+  "version": "1.0.0",
+  "description": "Sea_Vesion",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khouilid/Sea_Vesion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khouilid/Sea_Vesion/issues"
+  },
+  "homepage": "https://github.com/khouilid/Sea_Vesion#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
