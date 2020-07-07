@@ -1,0 +1,2 @@
+RewriteEngine On
+Redirect 301 /localhost/Sea_Vesion localhost/Sea_Vesion\App\View\index.php
