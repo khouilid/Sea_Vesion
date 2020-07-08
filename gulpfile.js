@@ -12,7 +12,7 @@ const cssnano = require('cssnano');
 
 // File paths
 const files = {
-    scssPath: 'public/sass/main.scss',
+    scssPath: 'public/sass/**/*.scss',
     jsPath: 'public/js/Script.js'
 }
 
