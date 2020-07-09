@@ -21,7 +21,7 @@
  </div>
  <div class="menu_1">
   <a class='menu' href="">Home</a>
-  <a class='menu' href="">Log in</a>
+  <a class='menu' id="btn_show_opup2" href="javascript:void(0)">Log in</a>
   <a class='menu' href="#contact_Us">Contact Us</a>
  </div>
  <div class="nav-item dropdown menu_2">
@@ -31,7 +31,7 @@
         <div class="dropdown-menu " aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Home</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Log in</a>
+          <a class="dropdown-item " id="btn_show_opup" href="javascript:void(0)">Log in</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#contact_Us">Contct Us</a>
         </div>
@@ -110,12 +110,12 @@ seeing what needs to be done.</h4>
   </div>
 </section>
 
-<!-- //TODO fix poup -->
+
 <div  id="Pop-event-TwoW" class="pop-up-add_events">
         <div class="pop-up-add_event m-auto">
             <form method="POST" action="">
-                <div class="clouse">
-                    <svg onclick=' hide_it()' aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
+                <div class="clouse" id='clouse'>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
                          class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 352 512">
                         <path style="fill: #10182F;" fill="currentColor"
@@ -190,5 +190,6 @@ seeing what needs to be done.</h4>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="src/js/general.js"></script>
 </body>
 </html>
