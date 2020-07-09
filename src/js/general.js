@@ -17,4 +17,3 @@ function hide_the_pop(){
 btn_show_opup.addEventListener('click', show_the_pop);
 btn_show_opup2.addEventListener('click', show_the_pop);
 clouse_popup.addEventListener('click', hide_the_pop);
-
