@@ -111,11 +111,39 @@ seeing what needs to be done.</h4>
 </section>
 
 <!-- //TODO fix poup -->
-<div class='shadow'>
-    <div class="pop_up">
-
-    </div>
-  </div>
+<div  id="Pop-event-TwoW" class="pop-up-add_events">
+        <div class="pop-up-add_event m-auto">
+            <form method="POST" action="">
+                <div class="clouse">
+                    <svg onclick=' hide_it()' aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
+                         class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 352 512">
+                        <path style="fill: #10182F;" fill="currentColor"
+                              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                    </svg>
+                </div>
+                <div class='sign_in'>
+                <p>Sign in to</p>
+                <img src="src/img/iPhone X-XS-11 Pro – 1.SVG" alt="">
+                </div>
+                <div class='sign_in_inputs'>
+                  <div class="sign_in_input">
+                    <p class="m-0">E-mail</p>
+                    <input type="email" name="" id="" placeholder="Enter your email">
+                  </div>
+                  <div class="sign_in_input mt-3">
+                    <p class="m-0">Password</p>
+                    <input type="password" name="" id="" placeholder="Enter your password">
+                  </div>
+                </div>
+                
+              
+              
+                <button type="submit">Sign in</button>
+            </form>
+            <a class="text-decoration-none text-dark  " href="">Forgot my password ?</a>
+        </div>
+</div>
 
 <footer class="blue p-4 mt-4">
   <div class='d-flex justify-content-center'><img  src="src\img\iPhone X-XS-11 Pro – 2.png" alt=""></div>
