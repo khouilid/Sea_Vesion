@@ -57,7 +57,7 @@
         </div>
     </div>
     <div>
-        <h1 onclick='back_program()'><i class="fas ml-3 mt-3 fa-arrow-left"></i></h1>
+        <h1 onclick='back_Arrow(1)'><i class="fas ml-3 mt-3 fa-arrow-left"></i></h1>
     </div>
 
     <div class='d-flex flex-wrap justify-content-around'>

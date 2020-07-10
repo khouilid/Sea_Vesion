@@ -3,7 +3,7 @@
     <h3 class="m-0 text-center d-flex justify-content-center text-white align-items-center"><i class="fas fa-search"></i></h3>
 </div>
 <div class='w-100 bar_1 p-2 text-white'>
-    <h5>In the port</h5>
+    <h5>Overview</h5>
 </div>
 
 <!-- all navire -->
@@ -40,7 +40,7 @@
 <!-- show all into -->
 <div class='m-3' id='all_info' style='display:none;'>
     <div>
-        <h1 onclick='all_navires()'><i class="fas fa-arrow-left"></i></h1>
+        <h1 onclick='back_Arrow(2)'><i class="fas fa-arrow-left"></i></h1>
     </div>
     <div class='ml-5'>
         <button class='btn btn-success m-2'>Loading</button>
