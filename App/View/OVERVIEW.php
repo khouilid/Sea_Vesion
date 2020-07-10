@@ -1,11 +1,11 @@
 <div class='sraech_input d-flex justify-content-between m-3 rounded-sm align-items-center'>
-    <input class='p-2' type="text" name="" id="" placeholder='Search'>
+    <input id="myInput2" class='p-2' type="text" name="" id="" placeholder='Search'>
     <h3 class="m-0 text-center d-flex justify-content-center text-white align-items-center"><i class="fas fa-search"></i></h3>
 </div>
 <div class='w-100 bar_1 p-2 text-white'>
     <h5>In the port</h5>
 </div>
-<!-- table -->
+
 <!-- all navire -->
 <div  id='info'  class='table-responsive-sm m-0 table-responsive-md'>
     <table class="table table-hover ">
@@ -20,7 +20,7 @@
         <th scope="col"></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id='myTable2'>
         
         <tr >
         <th scope="row">1</th>
@@ -47,7 +47,7 @@
         <button class='btn btn-success m-2'>PDA Pending</button>
         <button class='btn btn-success m-2'>CARGO</button>
     </div>
-    <div class='d-flex flex-wrap  flex-lg-nowrap'>
+    <div class='d-flex flex-wrap justify-content-center flex-lg-nowrap'>
 
         <div class='width_1  w-25 m-3'>
            <table class="table table-borderless ml-3">

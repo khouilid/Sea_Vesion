@@ -23,14 +23,23 @@
         </div>
     </nav>
     <div class="dashbord_header d-flex flex-column  flex-lg-row">
-        <div class='dashbord_menu h-100  d-flex flex-lg-column flex-row ' >
-            <button id="overviews" class='text-white p-3'>OVERVIEW</button>
-            <button class='text-white p-3'>VESSEL PROGRAME</button>
+    <!-- menu -->
+        <div class='dashbord_menu  d-flex flex-lg-column flex-row ' >
+            <button id="overview_btn" onclick='menu(1)' class='text-white p-3'>OVERVIEW</button>
+            <button id='Vessel_program_btn' onclick='menu(2)' class='text-white p-3'>VESSEL PROGRAME</button>
             <button class='text-white p-3'>FINANCE</button>
             <button class='text-white p-3'>OPERATIONS</button>
         </div>
         <div class='dashbord_header_main '>
+        <!-- overview dashbord -->
+            <div id='Overview' >
             <?php include 'OVERVIEW.php'; ?>
+            
+            </div>
+            <!-- vessel program dasbord -->
+            <div id='Vessel_program' style='display:none;'>
+                <?php include 'Vessel_program.php'; ?>
+            </div>
         </div>
     </div>
     
