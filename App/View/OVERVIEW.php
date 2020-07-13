@@ -76,7 +76,75 @@
                         <th scope="row">Customer Ref: </th>
                         <td>H875685</td>
                     </tr>
+                    <tr>
+                        <th scope="row " class='orange'>ARRIVAL DRAFTS(m)</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FOR</th>
+                        <td>574</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">AFT</th>
+                        <td>342</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"class='orange'>SAILING DRAFTS(m)</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FOR</th>
+                        <td>574</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">AFT</th>
+                        <td>342</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class='orange'>BUNKERS ON ARRIVAL</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FO</th>
+                        <td>574</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">DO</th>
+                        <td>342</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FW</th>
+                        <td>342</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">LO</th>
+                        <td>342</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class='orange'>BUNKERS ON SAILING</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FO</th>
+                        <td>574</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">DO</th>
+                        <td>342</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FW</th>
+                        <td>342</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">LO</th>
+                        <td>342</td>
+                    </tr>
                     
+                    <tr>
+                        <th scope="row" class='orange'>B/L QTY :</th>
+                        <td>342</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -136,7 +204,7 @@
             </div>
             <div class='card_1 m-3 p-1 bg-light rounded row flex-column justify-content-center'>
                 <h5 class='text-secondary'>NUMBER TUGS ENTRY</h5>
-                <p>04 Jul 3333 22:22</p>
+                <p>233</p>
             </div>
             <div class='card_1 m-3 p-1 bg-light rounded row flex-column justify-content-center'>
                 <h5 class='text-secondary'>NUMBER TUGS SAILING</h5>

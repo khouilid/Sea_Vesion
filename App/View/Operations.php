@@ -279,12 +279,9 @@
                 <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>NUMBER TUGS ENTRY</p>
-                        <input class='form-control widthh m-2 ' type="date" name="" id="">
+                        <input class='form-control widthh m-2 ' type="number" name="" id="">
                     </div>
-                    <div>
-                    <p class='m-0'> .</p>
-                        <input class='form-control widthh m-2' type="time" name="" id="">
-                    </div>
+                  
                     <div>
                     <p class='m-0'> .</p>
                         <textarea class='form-control m-2' name="" id="" cols="60" placeholder='Comment'></textarea>
@@ -294,18 +291,111 @@
                 <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>NUMBER TUGS SAILING</p>
-                        <input class='form-control widthh m-2 ' type="date" name="" id="">
+                        <input class='form-control widthh m-2 ' type="number" name="" id="">
                     </div>
-                    <div>
-                    <p class='m-0'> .</p>
-                        <input class='form-control widthh m-2' type="time" name="" id="">
-                    </div>
+                   
                     <div>
                     <p class='m-0'> .</p>
                         <textarea class='form-control m-2' name="" id="" cols="60" placeholder='Comment'></textarea>
                     </div>
             
                 </div>
+                <div class='m-3 d-flex flex-wrap'>
+                    <div>
+                        <p class='m-0'>ARRIVAL DRAFTS</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FORE' id="">
+                    </div>
+                    <div>
+                        <p class='m-0'>.</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='AFT' id="">
+                    </div>
+                   
+            
+                </div>
+                <div class='m-3 d-flex flex-wrap'>
+                    <div>
+                        <p class='m-0'>SAILING DRAFTS</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FORE' id="">
+                    </div>
+                    <div>
+                        <p class='m-0'>.</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='AFT' id="">
+                    </div>
+                  
+            
+                </div>
+
+                <div class='m-3 d-flex flex-wrap'>
+                    <div>
+                        <p class='m-0'>BUNKERS ON ARRIVAL</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FO' id="">
+                    </div>
+                    <div>
+                        <p class='m-0'>.</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='DO' id="">
+                    </div>
+                    <div>
+                        <p class='m-0'>.</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FW' id="">
+                    </div>
+                    <div>
+                        <p class='m-0'>.</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='LO' id="">
+                    </div>
+                  
+            
+                </div>
+                
+                <div class='m-3 d-flex flex-wrap'>
+                    <div>
+                        <p class='m-0'>BUNKERS ON SAILING</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FO' id="">
+                    </div>
+                    <div>
+                        <p class='m-0'>.</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='DO' id="">
+                    </div>
+                    <div>
+                        <p class='m-0'>.</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FW' id="">
+                    </div>
+                    <div>
+                        <p class='m-0'>.</p>
+                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='LO' id="">
+                    </div>
+                  
+            
+                </div>
+
+                <div class='m-3 d-flex flex-wrap'>
+                    <div>
+                        <p class='m-0'>  B/L QTY :</p>
+                        <input class='form-control widthh m-2 ' type="text" name="" placeholder=' 67,438.281 MT' id="">
+                    </div>  
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
                 <div class='w-100 bar_1 p-2 text-white'>
                         <h5>OPERATIONS</h5>
