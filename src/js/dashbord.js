@@ -9,13 +9,36 @@ let Overview = document.getElementById('Overview');
 let Operation = document.getElementById('Operation');
 let operation_details = document.getElementById('operation_details');
 let all_Vessel_operation = document.getElementById('all_Vessel_operation');
-
-
-
+let line_up = document.getElementById('line_up');
 let Evant = document.getElementById('Evant');
 let Document = document.getElementById('Document');
+let add = document.getElementById("principals");
 
 
+
+// line up dashbord 
+// this function will addnew input when user clcik 'add principa'
+let div = `<div class='d-flex flex-wrap'>
+<input type="text" name="" class="form-control widthh  m-1" placeholder='Full Name'>
+<input type="email" name="" class="form-control widthh  m-1" placeholder='E-mail'>
+</div>`;
+function add_principal() {
+    return add.insertAdjacentHTML("beforeend", div)
+    // add.innerHTML = "fldskfjldkfjsdlkfjs";
+};
+
+
+
+// show cargo when user chose if inport or export
+function decide_cargo(sel) {
+    let option_1 = `<option value="1">FERTILIZER</option><option value="2">PHOSPHATE </option>`;
+    if(sel == 2) {
+        document.getElementById('cargo').innerHTML = option_1;
+    }else if (sel == 1) {
+        document.getElementById('cargo').innerHTML = option_1;
+
+    }
+}
 
 
 // vessel program dashbord show all vessels
@@ -62,14 +85,22 @@ function menu(Num){
     Vessel_program.style.display = 'none'
     Operation.style.display = 'none'
     Overview.style.display = 'block'
+    line_up.style.display = 'none'
 
     }else if(Num == 2){
         Vessel_program.style.display = 'block'
         Operation.style.display = 'none'
         Overview.style.display = 'none'
+        line_up.style.display = 'none'
     }else if(Num == 4){
         Vessel_program.style.display = 'none'
         Operation.style.display = 'block'
+        Overview.style.display = 'none'
+        line_up.style.display = 'none'
+    }else if(Num == 5){
+        Vessel_program.style.display = 'none'
+        Operation.style.display = 'none'
+        line_up.style.display = 'block'
         Overview.style.display = 'none'
     }
 }
@@ -101,3 +132,6 @@ function event_doc(btn){
         Document.style.display = 'block';
     }
 }
+
+
+

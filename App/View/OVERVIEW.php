@@ -61,7 +61,11 @@
                         <td>04 Jul 3333</td>
                     </tr>
                     <tr>
-                        <th scope="row">ETS</th>
+                        <th scope="row">ETC</th>
+                        <td>04 Jul 3333</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ETD</th>
                         <td>04 Jul 3333</td>
                     </tr>
                     <tr>
@@ -69,13 +73,11 @@
                         <td>jorf lasfar</td>
                     </tr>
                     <tr>
-                        <th scope="row">jorf lasfar</th>
-                        <td>H875685</td>
+                        <th scope="row">Vessel</th>
+                        <td>H85</td>
                     </tr>
-                    <tr>
-                        <th scope="row">Customer Ref: </th>
-                        <td>H875685</td>
-                    </tr>
+                    
+                  
                     <tr>
                         <th scope="row " class='orange'>ARRIVAL DRAFTS(m)</th>
                         <td></td>

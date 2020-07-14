@@ -62,7 +62,7 @@
 
     <div class='d-flex flex-wrap justify-content-around'>
     
-            <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
+            <!-- <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
                 <p class='ml-3'>ETA</p>
                 <div class=' d-flex'>
                     <input class=" m-3 w-50 form-control" type="date" name="" id="">
@@ -71,7 +71,7 @@
                 <div class='m-3'>
                     <textarea class='form-control' name="" id="" cols="30" rows="2" placeholder='Comment'></textarea>
                 </div>
-            </div>
+            </div> -->
             <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
                 <p class='ml-3'>ETC</p>
                 <div class=' d-flex'>

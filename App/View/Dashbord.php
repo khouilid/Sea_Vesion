@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sea Vision</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../../src/css/main.css">
@@ -25,26 +25,47 @@
     <div class="dashbord_header d-flex flex-column  flex-lg-row">
     <!-- menu -->
         <div class='dashbord_menu  d-flex flex-lg-column flex-row ' >
-            <!-- //TODO #5 fix menu height problem -->
             <button id="overview_btn" onclick='menu(1)' class='text-white p-3'>OVERVIEW</button>
             <button id='Vessel_program_btn' onclick='menu(2)' class='text-white p-3'>VESSEL PROGRAME</button>
             <!-- //TODO #3 create Finance dashbord -->
             <button class='text-white p-3'>FINANCE</button>
             <button class='text-white p-3' onclick='menu(4)'>OPERATIONS</button>
+             <button class='text-white p-3' onclick='menu(5)'>LINE UP</button>
         </div>
+
+
+
         <div class='dashbord_header_main '>
-        <!-- overview dashbord -->
+
+
+
+
+             <!-- overview dashbord -->
             <div id='Overview' >
-            <?php include 'OVERVIEW.php'; ?>
-            
+               <?php include 'OVERVIEW.php'; ?>
             </div>
+
+
+
+
             <!-- vessel program dasbord -->
             <div id='Vessel_program' style='display:none;'>
                 <?php include 'Vessel_program.php'; ?>
             </div>
-<!-- operation dashbord -->
+
+
+
+
+            <!-- operation dashbord -->
             <div id='Operation' style='display:none;'>
                 <?php include 'Operations.php'; ?>
+            </div>
+
+
+
+            <!-- line up dashbord -->
+            <div id='line_up' style='display:none;'>
+                <?php include 'LINE_UP.php'; ?>
             </div>
         </div>
     </div>

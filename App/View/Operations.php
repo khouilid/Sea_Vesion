@@ -71,16 +71,7 @@
                     <h1 onclick='back_Arrow(3)'><i class=" fas ml-3 mt-3 fa-arrow-left"></i></h1>
                 </div>
             
-                <div>
-                    <div class='m-4'>
-                        <select class="custom-select widthh">
-                            <option selected>CARGO</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
+               
                 <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>EOSP</p>
@@ -300,7 +291,7 @@
                     </div>
             
                 </div>
-                <div class='m-3 d-flex flex-wrap'>
+                <!-- <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>ARRIVAL DRAFTS</p>
                         <input class='form-control widthh m-2 ' type="number" name="" placeholder='FORE' id="">
@@ -311,7 +302,7 @@
                     </div>
                    
             
-                </div>
+                </div> -->
                 <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>SAILING DRAFTS</p>
@@ -325,7 +316,7 @@
             
                 </div>
 
-                <div class='m-3 d-flex flex-wrap'>
+                <!-- <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>BUNKERS ON ARRIVAL</p>
                         <input class='form-control widthh m-2 ' type="number" name="" placeholder='FO' id="">
@@ -344,7 +335,7 @@
                     </div>
                   
             
-                </div>
+                </div> -->
                 
                 <div class='m-3 d-flex flex-wrap'>
                     <div>
@@ -367,12 +358,12 @@
             
                 </div>
 
-                <div class='m-3 d-flex flex-wrap'>
+                <!-- <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>  B/L QTY :</p>
                         <input class='form-control widthh m-2 ' type="text" name="" placeholder=' 67,438.281 MT' id="">
                     </div>  
-                </div>
+                </div> -->
 
 
 
