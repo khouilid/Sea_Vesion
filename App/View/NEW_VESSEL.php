@@ -5,10 +5,13 @@
     </div>
 </div>
 <div class='w-100 bar_1 p-2 text-white'>
-    <h5>LINE UP</h5>
+    <h5>NEW VESSEL</h5>
 </div>
 <div>
     <!-- info -->
+    <div class="m-3">
+        <h1 onclick='back_Arrow(4)'><i class="fas fa-arrow-left"></i></h1>
+    </div>
     <div class='card m-3 shadow-sm '>
     <div class='text-center p-2  bg-success title_up text-light'>
                    <h5>Agent informations</h5>
@@ -53,7 +56,7 @@
             <div class='m-3'>
             <p class="m-0">IMPORT/EXPORT</p>
                 <select class="custom-select widthh" onclick=' decide_cargo(this.value)'>
-                    <option selected    ></option>
+                    <option selected></option>
                     <option value="1">IMPORT</option>
                     <option value="2">EXPORT</option>
                     

@@ -2,8 +2,9 @@
     <input id="myInput2" class='p-2' type="text" name="" id="" placeholder='Search'>
     <h3 class="m-0 text-center d-flex justify-content-center text-white align-items-center"><i class="fas fa-search"></i></h3>
 </div>
-<div class='w-100 bar_1 p-2 text-white'>
+<div class='w-100 bar_1 p-2 text-white d-flex justify-content-between'>
     <h5>Overview</h5>
+    <button class='text-white btn btn-success ' onclick='menu(5)'><i class="fas fa-plus mr-2" ></i>NEW VESSEL</button>
 </div>
 
 <!-- all navire -->

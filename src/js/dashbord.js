@@ -18,24 +18,25 @@ let add = document.getElementById("principals");
 
 // line up dashbord 
 // this function will addnew input when user clcik 'add principa'
-let div = `<div class='d-flex flex-wrap'>
-<input type="text" name="" class="form-control widthh  m-1" placeholder='Full Name'>
-<input type="email" name="" class="form-control widthh  m-1" placeholder='E-mail'>
-</div>`;
 function add_principal() {
+    let div = `<div class='d-flex flex-wrap'>
+    <input type="text" name="" class="form-control widthh  m-1" placeholder='Full Name'>
+    <input type="email" name="" class="form-control widthh  m-1" placeholder='E-mail'>
+    </div>`;
     return add.insertAdjacentHTML("beforeend", div)
-    // add.innerHTML = "fldskfjldkfjsdlkfjs";
 };
 
 
 
 // show cargo when user chose if inport or export
 function decide_cargo(sel) {
-    let option_1 = `<option value="1">FERTILIZER</option><option value="2">PHOSPHATE </option>`;
+    let option_1 = `<option value="FERTILIZER">FERTILIZER</option><option value="PHOSPHATE">PHOSPHATE </option>`;
+    let option_2 = `<option value="SULPHUR">SULPHUR</option>`;
+    console.log(sel);
     if(sel == 2) {
         document.getElementById('cargo').innerHTML = option_1;
     }else if (sel == 1) {
-        document.getElementById('cargo').innerHTML = option_1;
+        document.getElementById('cargo').innerHTML = option_2;
 
     }
 }
@@ -58,12 +59,11 @@ function back_Arrow(v){
     }else if (v == 3){
         all_Vessel_operation.style.display ='block '
         operation_details.style.display ='none'
+    }else if (v == 4){
+        line_up.style.display = 'none'
+        Overview.style.display = 'block'
     }
 }
-
-
-
-
 
 // Overview dashbord 
 function show_all_info(){
@@ -75,7 +75,7 @@ function show_all_info(){
 
 function update_operation(){
     all_Vessel_operation.style.display ='none'
-        operation_details.style.display ='block '
+    operation_details.style.display ='block '
 }
 
 // menu function 
@@ -97,11 +97,6 @@ function menu(Num){
         Operation.style.display = 'block'
         Overview.style.display = 'none'
         line_up.style.display = 'none'
-    }else if(Num == 5){
-        Vessel_program.style.display = 'none'
-        Operation.style.display = 'none'
-        line_up.style.display = 'block'
-        Overview.style.display = 'none'
     }
 }
 
