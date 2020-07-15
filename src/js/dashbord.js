@@ -65,6 +65,10 @@ function back_Arrow(v){
     }
 }
 
+
+
+
+
 // Overview dashbord 
 function show_all_info(){
     info.style.display = 'none'
@@ -75,7 +79,7 @@ function show_all_info(){
 
 function update_operation(){
     all_Vessel_operation.style.display ='none'
-    operation_details.style.display ='block '
+        operation_details.style.display ='block '
 }
 
 // menu function 
@@ -97,6 +101,9 @@ function menu(Num){
         Operation.style.display = 'block'
         Overview.style.display = 'none'
         line_up.style.display = 'none'
+    }else if(Num == 5){
+        line_up.style.display = 'block'
+        Overview.style.display = 'none'
     }
 }
 
