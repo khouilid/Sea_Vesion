@@ -10,6 +10,7 @@ let Operation = document.getElementById('Operation');
 let operation_details = document.getElementById('operation_details');
 let all_Vessel_operation = document.getElementById('all_Vessel_operation');
 let line_up = document.getElementById('line_up');
+let line_up1 = document.getElementById('line_up1');
 let Evant = document.getElementById('Evant');
 let Document = document.getElementById('Document');
 let add = document.getElementById("principals");
@@ -79,7 +80,7 @@ function show_all_info(){
 
 function update_operation(){
     all_Vessel_operation.style.display ='none'
-        operation_details.style.display ='block '
+    operation_details.style.display ='block '
 }
 
 // menu function 
@@ -89,25 +90,30 @@ function menu(Num){
     Vessel_program.style.display = 'none'
     Operation.style.display = 'none'
     Overview.style.display = 'block'
-    line_up.style.display = 'none'
+    line_up1.style.display = 'none'
 
     }else if(Num == 2){
         Vessel_program.style.display = 'block'
         Operation.style.display = 'none'
         Overview.style.display = 'none'
-        line_up.style.display = 'none'
+        line_up1.style.display = 'none'
     }else if(Num == 4){
         Vessel_program.style.display = 'none'
         Operation.style.display = 'block'
         Overview.style.display = 'none'
-        line_up.style.display = 'none'
+        line_up1.style.display = 'none'
     }else if(Num == 5){
         line_up.style.display = 'block'
         Overview.style.display = 'none'
+    }else if(Num == 6){
+        Vessel_program.style.display = 'none'
+        Operation.style.display = 'none'
+        Overview.style.display = 'none'
+        line_up1.style.display = 'block'
     }
 }
 
-// input for searching an Navire
+// input for vessels searching 
 
 function searsh(id1 , id2) {
     $(id1).on("keyup", function () {

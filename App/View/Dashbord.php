@@ -30,7 +30,7 @@
             <!-- //TODO #3 create Finance dashbord -->
             <button class='text-white p-3'>FINANCE</button>
             <button class='text-white p-3' onclick='menu(4)'>OPERATIONS</button>
-            <button class='text-white p-3' onclick='menu(5)'>LINE UP</button>
+            <button class='text-white p-3' onclick='menu(6)'>LINE UP</button>
             
         </div>
 
@@ -38,44 +38,35 @@
 
         <div class='dashbord_header_main '>
 
-
-
-
              <!-- overview dashbord -->
             <div id='Overview' style='display:none;'>
-               <?php include 'OVERVIEW.php'; ?>
+               <?php include 'includes/OVERVIEW.php'; ?>
             </div>
-
-
 
 
             <!-- vessel program dasbord -->
             <div id='Vessel_program' style='display:none;'>
-                <?php include 'Vessel_program.php'; ?>
+                <?php include 'includes/Vessel_program.php'; ?>
             </div>
-
-
 
 
             <!-- operation dashbord -->
             <div id='Operation' style='display:none;'>
-                <?php include 'Operations.php'; ?>
+                <?php include 'includes/Operations.php'; ?>
             </div>
-
 
 
             <!-- Add neww vessel dashbord -->
             <div id='line_up' style='display:none;'>
-                <?php include 'NEW_VESSEL.php'; ?>
+                <?php include 'includes/NEW_VESSEL.php'; ?>
             </div>
-
-
 
 
             <!-- line up dashord -->
             <div id='line_up1'>
-                <?php include 'LINE_UP.php'; ?>
+                <?php include 'includes/LINE_UP.php'; ?>
             </div>
+
         </div>
     </div>
     
