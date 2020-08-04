@@ -9,12 +9,12 @@ let Overview = document.getElementById('Overview');
 let Operation = document.getElementById('Operation');
 let operation_details = document.getElementById('operation_details');
 let all_Vessel_operation = document.getElementById('all_Vessel_operation');
-let line_up = document.getElementById('line_up');
 let line_up1 = document.getElementById('line_up1');
 let Evant = document.getElementById('Evant');
 let Document = document.getElementById('Document');
 let add = document.getElementById("principals");
 
+let new_vessel = document.getElementById('line_up');
 
 
 // line up dashbord 
@@ -61,7 +61,7 @@ function back_Arrow(v){
         all_Vessel_operation.style.display ='block '
         operation_details.style.display ='none'
     }else if (v == 4){
-        line_up.style.display = 'none'
+        new_vessel.style.display = 'none'
         Overview.style.display = 'block'
     }
 }
@@ -87,29 +87,38 @@ function update_operation(){
 
 function menu(Num){
     if(Num == 1){
-    Vessel_program.style.display = 'none'
-    Operation.style.display = 'none'
-    Overview.style.display = 'block'
-    line_up1.style.display = 'none'
+        Vessel_program.style.display = 'none';
+        Operation.style.display = 'none';
+        Overview.style.display = 'block';
+        line_up1.style.display = 'none';
+        new_vessel.style.display = 'none';
 
     }else if(Num == 2){
-        Vessel_program.style.display = 'block'
-        Operation.style.display = 'none'
-        Overview.style.display = 'none'
-        line_up1.style.display = 'none'
+        Vessel_program.style.display = 'block;'
+        Operation.style.display = 'none';
+        Overview.style.display = 'none';
+        line_up1.style.display = 'none';
+        new_vessel.style.display = 'none';
+
     }else if(Num == 4){
-        Vessel_program.style.display = 'none'
-        Operation.style.display = 'block'
-        Overview.style.display = 'none'
-        line_up1.style.display = 'none'
-    }else if(Num == 5){
-        line_up.style.display = 'block'
-        Overview.style.display = 'none'
+        Vessel_program.style.display = 'none';
+        Operation.style.display = 'block;'
+        Overview.style.display = 'none';
+        line_up1.style.display = 'none';
+        new_vessel.style.display = 'none';
+ 
+    }else if(Num == 7){;
+        new_vessel.style.display = 'block';
+        Overview.style.display = 'none';
+        // new_vessel.style.display = 'none';
+   
     }else if(Num == 6){
-        Vessel_program.style.display = 'none'
-        Operation.style.display = 'none'
-        Overview.style.display = 'none'
-        line_up1.style.display = 'block'
+        Vessel_program.style.display = 'none';
+        Operation.style.display = 'none';
+        Overview.style.display = 'none';
+        line_up1.style.display = 'block';
+        new_vessel.style.display = 'none';
+
     }
 }
 

@@ -26,6 +26,13 @@
 </div>
 
 
+<div>
+    <!-- //TODO Create the table for the last lin up; -->
+    <?php include 'lineUp_deff.php'; ?>
+    <!-- here we will include the deffrent one  -->
+</div>
+
+
 
 
 
