@@ -83,6 +83,8 @@ function update_operation(){
     operation_details.style.display ='block '
 }
 
+// add new vessel 
+
 // menu function 
 
 function menu(Num){
@@ -94,7 +96,7 @@ function menu(Num){
         new_vessel.style.display = 'none';
 
     }else if(Num == 2){
-        Vessel_program.style.display = 'block;'
+        Vessel_program.style.display = 'block'
         Operation.style.display = 'none';
         Overview.style.display = 'none';
         line_up1.style.display = 'none';
@@ -102,16 +104,15 @@ function menu(Num){
 
     }else if(Num == 4){
         Vessel_program.style.display = 'none';
-        Operation.style.display = 'block;'
+        Operation.style.display = 'block'
         Overview.style.display = 'none';
         line_up1.style.display = 'none';
         new_vessel.style.display = 'none';
  
-    }else if(Num == 7){;
+    }else if(Num == 5){;
         new_vessel.style.display = 'block';
         Overview.style.display = 'none';
-        // new_vessel.style.display = 'none';
-   
+        
     }else if(Num == 6){
         Vessel_program.style.display = 'none';
         Operation.style.display = 'none';

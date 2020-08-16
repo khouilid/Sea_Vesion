@@ -1,5 +1,5 @@
 <div class='d-flex'>
-       <div class='d-flex m-3'>
+       <div class='d-flex m-3 w-100 line_ups_menu'>
             <button onclick='event_doc(8)'  class='btn btn-success m-2'>line ups</button>
             <button onclick='event_doc(4)' class='btn btn-success m-2'>line up general</button>
             <button onclick='event_doc(5)'  class='btn btn-success m-2'>line up fertilizer</button>
@@ -18,19 +18,15 @@
 </div>
 
 
-<!--we have 7 line up , all looks the same , but one is deverent so i will include one  -->
+<!--we have 7 line up , all looks the same  -->
 
 <div>
+    <!-- after we get the data from DB we will loop truth them and show it in the table  -->
     <?php include 'lineUp.php'; ?>
-    <!-- here we will include all the sex table  -->
 </div>
 
 
-<div>
-    <!-- //TODO Create the table for the last lin up; -->
-    <?php include 'lineUp_deff.php'; ?>
-    <!-- here we will include the deffrent one  -->
-</div>
+
 
 
 

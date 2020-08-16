@@ -3,7 +3,7 @@
     <table class="table table-hover ">
     <thead class="thead-dark1 ">
         <tr class="text-white">
-        <th scope="col">1. ALOANGSIDE</th>
+        <th scope="col bg-success">1. ALOANGSIDE</th>
         <th scope="col">VESSEL</th>
         <th scope="col">TONNAGE (MT)</th>
         <th scope="col">IMPORT/EXPORT</th>
@@ -13,6 +13,7 @@
         <th scope="col">BERTHED </th>
         <th scope="col">ETC</th>
         <th scope="col">BERTH</th>
+        <th scope="col">DESTINATION</th>
         </tr>
     </thead>
     <tbody id='myTable2'>
@@ -29,6 +30,7 @@
         <td>29/06- 05H42</td>
         <td>06/07 PM </td>
         <td>1N</td>
+        <td>USA</td>
         
         </tr>
     
@@ -41,7 +43,7 @@
     <table class="table table-hover ">
     <thead class="thead-dark1 ">
         <tr class="text-white">
-        <th scope="col">2. AT ANCHORAGE</th>
+        <th scope="col bg-success">2. AT ANCHORAGE</th>
         <th scope="col">VESSEL</th>
         <th scope="col">TONNAGE (MT)</th>
         <th scope="col">IMPORT/EXPORT</th>
@@ -51,6 +53,7 @@
         <th scope="col">BERTHED </th>
         <th scope="col">ETC</th>
         <th scope="col">BERTH</th>
+        <th scope="col">DESTINATION</th>
 
         </tr>
     </thead>
@@ -68,6 +71,7 @@
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         
         </tr>
     
@@ -78,9 +82,9 @@
 
 <div    class='table-responsive-sm m-0 table-responsive-md'>
     <table class="table table-hover ">
-    <thead class="thead-dark1 ">
+    <thead class="thead-dark1">
         <tr class="text-white">
-        <th scope="col">3. EXPECTED</th>
+        <th scope="col ">3. EXPECTED</th>
         <th scope="col">VESSEL</th>
         <th scope="col">TONNAGE (MT)</th>
         <th scope="col">IMPORT/EXPORT</th>
@@ -90,6 +94,7 @@
         <th scope="col">BERTHED </th>
         <th scope="col">ETC</th>
         <th scope="col">BERTH</th>
+        <th scope="col">DESTINATION</th>
 
         </tr>
     </thead>
@@ -106,12 +111,14 @@
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         
         </tr>
     
     </tbody>
     </table>
 </div>
+<div class="m-4 "><button class="btn float-right btn-success">Download</button></div>
 
 
 

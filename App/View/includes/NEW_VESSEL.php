@@ -76,6 +76,12 @@
                         <input class='form-control widthh m-2 ' type="number" name="" placeholder=' 67,438.281' id="">
                     </div>  
             </div>
+            <div class='m-3 d-flex flex-wrap'>
+                    <div>
+                        <p class='m-0'>DESTINATION :</p>
+                        <input class='form-control widthh m-2 ' type="text" name="" placeholder=' USA' id="">
+                    </div>  
+            </div>
 
             <div class='m-3 d-flex flex-wrap'>
                     <div>
