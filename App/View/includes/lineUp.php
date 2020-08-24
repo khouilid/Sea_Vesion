@@ -67,11 +67,11 @@
         <td>EXPORT </td>
         <td>FERTILIZER</td>
         <td> 28/06 00H42</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
         
         </tr>
     
@@ -107,11 +107,11 @@
         <td>EXPORT </td>
         <td>FERTILIZER</td>
         <td> 28/06 00H42</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
         
         </tr>
     
