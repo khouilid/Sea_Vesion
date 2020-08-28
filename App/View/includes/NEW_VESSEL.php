@@ -7,6 +7,8 @@
 <div class='w-100 bar_1 p-2 text-white'>
     <h5>NEW VESSEL</h5>
 </div>
+<form action="../Control/New.vessel.php" method='POST'>
+
 <div>
     <!-- info -->
     <div class="m-3">
@@ -19,20 +21,20 @@
         <div class=''>
              <div class="m-3">
                 <p class="m-0">Performing Agent:</p>
-                <input type="text" name="" class="form-control widthh  m-0" placeholder='Performing Agent'>
+                <input type="text" name="Agent" class="form-control widthh  m-0" placeholder='Performing Agent'>
             </div>
             <div class="m-3">
                 <p class="m-0">Principal:</p>
                 <div class='d-flex flex-wrap' >
-                    <input type="text" name="" class="form-control widthh  m-1" placeholder='Full Name'>
-                    <input type="email" name="" class="form-control widthh  m-1" placeholder='E-mail'>
+                    <input type="text" name="Principals_names[]" class="form-control widthh  m-1" placeholder='Full Name'>
+                    <input type="email" name="Principal_mails[]" class="form-control widthh  m-1" placeholder='E-mail'>
                 </div>
             </div>
             <div class="m-3" id='principals'>
                 <p class="m-0">Principal main contact:</p>
                 <div class='d-flex flex-wrap' >
-                    <input type="text" name="" class="form-control widthh  m-1" placeholder='Full Name'>
-                    <input type="email" name="" class="form-control widthh  m-1" placeholder='E-mail'>
+                    <input type="text" name="Principals_names[]" class="form-control widthh  m-1" placeholder='Full Name'>
+                    <input type="email" name="Principal_mails[]" class="form-control widthh  m-1" placeholder='E-mail'>
                 </div>
             </div>
             <div class="d-flex justify-content-end">
@@ -46,16 +48,16 @@
         <div class='d-flex flex-wrap'>
             <div class="m-3">
                 <p class="m-0">Vessel</p>
-                <input type="text" name="" class="form-control widthh  m-0" placeholder='Vessel name'>
+                <input type="text" name="Vessel" class="form-control widthh  m-0" placeholder='Vessel name'>
             </div>
            
             <div class="m-3">
                 <p class="m-0">Port</p>
-                <input type="text" name="" class="form-control widthh  m-0" placeholder='Port'>
+                <input type="text" name="Port" class="form-control widthh  m-0" placeholder='Port'>
             </div>
             <div class='m-3'>
             <p class="m-0">IMPORT/EXPORT</p>
-                <select class="custom-select widthh" onclick=' decide_cargo(this.value)'>
+                <select class="custom-select widthh" name='IMPORT_EXPORT' onclick=' decide_cargo(this.value)'>
                     <option selected></option>
                     <option value="1">IMPORT</option>
                     <option value="2">EXPORT</option>
@@ -65,7 +67,7 @@
         
             <div class='m-3'>
             <p class="m-0">CARGO</p>
-                <select class="custom-select widthh" id='cargo'>
+                <select name='CARGO' class="custom-select widthh" id='cargo'>
                     <option selected>CARGO</option>
                     
                 </select>
@@ -73,28 +75,28 @@
             <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>B/L QTY(MT) :</p>
-                        <input class='form-control widthh m-2 ' type="number" name="" placeholder=' 67,438.281' id="">
+                        <input class='form-control widthh m-2 ' name='QTY' type="number" name="" placeholder=' 67,438.281' id="">
                     </div>  
             </div>
             <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>DESTINATION :</p>
-                        <input class='form-control widthh m-2 ' type="text" name="" placeholder=' USA' id="">
+                        <input class='form-control widthh m-2 ' name='DESTINATION' type="text"  placeholder=' USA' id="">
                     </div>  
             </div>
 
             <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>ETA</p>
-                        <input class='form-control widthh m-2 ' type="date" name="" id="">
+                        <input class='form-control widthh m-2 ' type="date" name="ETA[]" id="">
                     </div>
                     <div>
                     <p class='m-0'> .</p>
-                        <input class='form-control widthh m-2' type="time" name="" id="">
+                        <input class='form-control widthh m-2' type="time" name="ETA[]" id="">
                     </div>
                     <div>
                     <p class='m-0'> .</p>
-                        <textarea class='form-control m-2' name="" id="" cols="60" placeholder='Comment'></textarea>
+                        <textarea class='form-control m-2' name="ETA_Comment" id="" cols="60" placeholder='Comment'></textarea>
                     </div>
             
                 </div>
@@ -102,11 +104,11 @@
             <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>ARRIVAL DRAFTS</p>
-                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FORE' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="ARRIVAL_DRAFTS[]" placeholder='FORE' id="">
                     </div>
                     <div>
                         <p class='m-0'>.</p>
-                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='AFT' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="ARRIVAL_DRAFTS[]" placeholder='AFT' id="">
                     </div>
                    
             
@@ -114,19 +116,19 @@
                 <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>BUNKERS ON ARRIVAL</p>
-                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FO' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='FO' id="">
                     </div>
                     <div>
                         <p class='m-0'>.</p>
-                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='DO' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='DO' id="">
                     </div>
                     <div>
                         <p class='m-0'>.</p>
-                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='FW' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='FW' id="">
                     </div>
                     <div>
                         <p class='m-0'>.</p>
-                        <input class='form-control widthh m-2 ' type="number" name="" placeholder='LO' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='LO' id="">
                     </div>
                   
             
@@ -141,7 +143,7 @@
         </div>
         <div class="d-flex justify-content-end">
 
-            <button  class="btn btn-success  title_up  m-3"><i class="fas fa-plus mr-2"></i>Add Vessel</button>
+            <button  type='submit' class="btn btn-success  title_up  m-3"><i class="fas fa-plus mr-2"></i>Add Vessel</button>
         </div>
            
 
@@ -153,3 +155,4 @@
     </div>
 
 </div>
+</form>

@@ -21,8 +21,8 @@ let new_vessel = document.getElementById('line_up');
 // this function will addnew input when user clcik 'add principa'
 function add_principal() {
     let div = `<div class='d-flex flex-wrap'>
-    <input type="text" name="" class="form-control widthh  m-1" placeholder='Full Name'>
-    <input type="email" name="" class="form-control widthh  m-1" placeholder='E-mail'>
+    <input type="text" name="Principals_names[]" class="form-control widthh  m-1" placeholder='Full Name'>
+    <input type="email" name="Principal_mails[]" class="form-control widthh  m-1" placeholder='E-mail'>
     </div>`;
     return add.insertAdjacentHTML("beforeend", div)
 };
