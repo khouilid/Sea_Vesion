@@ -2,9 +2,9 @@
 include '../../Config/DB_connection.php';
 
 class new_vessel Extends DB_connection{
-
+    //first data 
     public $Agent;
-    public $Principals;//Array containe all the principals names
+    public $Principals;
     public $Vessel;
     public $Port;
     public $CARGO;
@@ -44,7 +44,7 @@ class new_vessel Extends DB_connection{
 
     
     }
-
+    // insert principal data into db 
     private function insert_vessel(){
 
         $sql = 'INSERT INTO `vessels`(`Name`, `Port`, `Qty`, `Cargo`, `Desti`, `Principals` , `IMPORT_EXPORT` ,`Agent`) VALUES (?,?,?,?,?,?,?,?);';
@@ -56,7 +56,7 @@ class new_vessel Extends DB_connection{
 
 
     }
-    
+    // insert arrival time into db
     private function insert_time($id){
         $sql = 'INSERT INTO `times`(`ID`, `ETA`, `Commnet_1`) VALUES (?,?,?);';
 
@@ -76,9 +76,9 @@ class new_vessel Extends DB_connection{
     }
 
 
-    // $this->get_last_id($this->$Vessel);
+    
 
-
+    //call all methods of this class
     public function insert_new_vessel(){
         $this->insert_vessel();
         $id = $this->get_last_id($this->Vessel);

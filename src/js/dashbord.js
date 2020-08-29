@@ -33,7 +33,7 @@ function add_principal() {
 function decide_cargo(sel) {
     let option_1 = `<option value="FERTILIZER">FERTILIZER</option><option value="PHOSPHATE">PHOSPHATE </option>`;
     let option_2 = `<option value="SULPHUR">SULPHUR</option>`;
-    console.log(sel);
+
     if(sel == 2) {
         document.getElementById('cargo').innerHTML = option_1;
     }else if (sel == 1) {

@@ -39,7 +39,7 @@
             </div>
             <div class="d-flex justify-content-end">
 
-                <button onclick='add_principal()' class="btn btn-success title_up  m-3"><i class="fas fa-user-plus mr-2" ></i>Add Principal</button>
+                <button onclick='add_principal()' type='button' class="btn btn-success title_up  m-3"><i class="fas fa-user-plus mr-2" ></i>Add Principal</button>
             </div>
            
         <div class='text-center p-2  bg-orange title_up text-white'>
