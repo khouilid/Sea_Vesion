@@ -16,26 +16,16 @@
         <th scope="col">Port:</th>
         <th scope="col">Vessel:</th>
         <th scope="col">Principal:</th>
-        <th scope="col">Principal main contact : </th>
+        <th scope="col">Agent</th>
         <th scope="col">Statue</th>
         <th scope="col"></th>
         </tr>
     </thead>
-    <tbody id='myTable2'>
-        
-        <tr >
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td><button onclick='show_all_info()' class='btn btn-success'>Show All</button></td>
-        </tr>
-    
-    </tbody>
+       <?php include '../Control/Get.vessel.php'; ?>
     </table>
 </div>
+
+
 
 
 <!-- show all into -->
