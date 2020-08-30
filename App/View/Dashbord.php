@@ -1,3 +1,5 @@
+<?php include '../Control/Get.vessel.php'; ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../../src/css/main.css">
     <script src="https://kit.fontawesome.com/d257b03b55.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>

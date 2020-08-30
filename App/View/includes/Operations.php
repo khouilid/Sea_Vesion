@@ -20,14 +20,11 @@
                 </tr>
             </thead>
             <tbody id="myTable3">
-                
-                <tr >
-                <th scope="row">1</th>
-                <td>2020/07.10 22:33</td>
-                <td>2020/07.10 22:33</td>
-                <td>2020/07.10 22:33</td>
-                <td><button onclick='update_operation()' class='btn btn-success'>Show All</button></td>
-                </tr>
+                  
+            <?php  
+              $list = new Show_list;
+              $list = $list->Get_vessels_times();
+          ?>
             
             </tbody>
             </table>

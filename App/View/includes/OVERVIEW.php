@@ -17,14 +17,18 @@
         <th scope="col">Vessel:</th>
         <th scope="col">Principal:</th>
         <th scope="col">Agent</th>
-        <th scope="col">Statue</th>
+        <th scope="col">Status</th>
         <th scope="col"></th>
         </tr>
     </thead>
-       <?php include '../Control/Get.vessel.php'; ?>
+    <tbody id='myTable2'>       
+          <?php  
+              $list = new Show_list;
+              $list = $list->Get_vessels_lists();
+          ?>
+    </tbody>
     </table>
 </div>
-
 
 
 

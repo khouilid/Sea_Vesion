@@ -44,10 +44,26 @@ function decide_cargo(sel) {
 
 
 // vessel program dashbord show all vessels
+function Get_info(id) {
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML =
+            this.responseText;
+       }
+    };
+    xmlhttp.open("GET", "../Control/Get.vessel.info.php?id=" + id, true);
+    xmlhttp.send();
+    update_program();
+
+}
 
 function update_program(){
+    
     all_navire_programs.style.display =' none';
     N_program.style.display ='block';
+
 }
 // back to all vessels
 function back_Arrow(v){
@@ -65,6 +81,8 @@ function back_Arrow(v){
         Overview.style.display = 'block'
     }
 }
+
+
 
 
 

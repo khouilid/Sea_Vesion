@@ -15,21 +15,20 @@
                 <tr class="text-white">
                 <th scope="col">Job ID:</th>
                 <th scope="col">ETA</th>
-                <th scope="col">ETC</th>
                 <th scope="col">ETD</th>
+                <th scope="col">ETC</th>
             
                 <th scope="col"></th>
                 </tr>
             </thead>
             <tbody id="myTable">
                 
-                <tr >
-                <th scope="row">1</th>
-                <td>2020/07.10 22:33</td>
-                <td>2020/07.10 22:33</td>
-                <td>2020/07.10 22:33</td>
-                <td><button onclick='update_program()' class='btn btn-success'>Show All</button></td>
-                </tr>
+              
+            <?php  
+              $list = new Show_list;
+              $list = $list->Get_vessels_times();
+            ?>
+               
             
             </tbody>
             </table>
@@ -45,57 +44,49 @@
         <h3 class='m-0'><i class="text-success far fa-check-circle mr-3 ml-3"></i></h3>
         <p class='m-0'>WHEN YOU CLICK UPDATE WE WILL SEND EMAILS INTO THE CLIENTS</p>
     </div>
-        <div class='w-100 bar_1 p-2 text-white'>
+    <div class='w-100 bar_1 p-2 text-white'>
             <h5>VESSEL PROGRAME</h5>
-        </div>
+    </div>
+    
+<form action="../Control/Update.date.php" method='POST'>
     <div>
-        <div class='w-100 p-2 text-white bg-orange d-flex justify-content-around'>
-            <h6>Job ID: </h6>
-            <h6>Port: </h6>
-            <h6>Vessel: </h6>
-            <h6>Principal: </h6>
+        <div id='demo' class='w-100 p-2 text-white bg-orange d-flex justify-content-around'>
+        
         </div>
     </div>
     <div>
         <h1 onclick='back_Arrow(1)'><i class="fas ml-3 mt-3 fa-arrow-left"></i></h1>
     </div>
 
-    <div class='d-flex flex-wrap justify-content-around'>
-    
-            <!-- <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
-                <p class='ml-3'>ETA</p>
+        <div class='d-flex flex-wrap justify-content-around'>
+        
+        <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
+                <p class='ml-3'>ETD</p>
                 <div class=' d-flex'>
-                    <input class=" m-3 w-50 form-control" type="date" name="" id="">
-                    <input class=" m-3 w-50 form-control" type="time" name="" id="">
+                    <input class=" m-3 w-50 form-control" type="date" name="ETD_date" id="">
+                    <input class=" m-3 w-50 form-control" type="time" name="ETD_time" id="">
                 </div>
                 <div class='m-3'>
-                    <textarea class='form-control' name="" id="" cols="30" rows="2" placeholder='Comment'></textarea>
+                    <textarea class='form-control' name="ETD_comment" id="" cols="30" rows="2" placeholder='Comment'></textarea>
                 </div>
-            </div> -->
+            </div>
+
             <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
                 <p class='ml-3'>ETC</p>
                 <div class=' d-flex'>
-                    <input class=" m-3 w-50 form-control" type="date" name="" id="">
-                    <input class=" m-3 w-50 form-control" type="time" name="" id="">
+                    <input class=" m-3 w-50 form-control" type="date" name="ETC_date" id="">
+                    <input class=" m-3 w-50 form-control" type="time" name="ETC_time" id="">
                 </div>
                 <div class='m-3'>
-                    <textarea class='form-control' name="" id="" cols="30" rows="2" placeholder='Comment'></textarea>
+                    <textarea class='form-control' name="ETC_comment" id="" cols="30" rows="2" placeholder='Comment'></textarea>
                 </div>
             </div>
-            <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
-                <p class='ml-3'>ETD</p>
-                <div class=' d-flex'>
-                    <input class=" m-3 w-50 form-control" type="date" name="" id="">
-                    <input class=" m-3 w-50 form-control" type="time" name="" id="">
-                </div>
-                <div class='m-3'>
-                    <textarea class='form-control' name="" id="" cols="30" rows="2" placeholder='Comment'></textarea>
-                </div>
-            </div>
-    
-    </div>
-    <div class='d-flex flex-wrap justify-content-center'>
+         
 
-        <button class='btn btn-success m-3'>Update And Send emails</button>
-    </div>
+        </div>
+        <div class='d-flex flex-wrap justify-content-center'>
+
+        <button class='btn btn-success m-3' type='submit'>Update And Send emails</button>
+        </div>
+</form>
 </div>
