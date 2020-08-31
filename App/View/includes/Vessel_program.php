@@ -26,7 +26,7 @@
               
             <?php  
               $list = new Show_list;
-              $list = $list->Get_vessels_times();
+              $list = $list->Get_vessels_times(1);
             ?>
                
             
@@ -50,7 +50,7 @@
     
 <form action="../Control/Update.date.php" method='POST'>
     <div>
-        <div id='demo' class='w-100 p-2 text-white bg-orange d-flex justify-content-around'>
+        <div id='demo_1' class='w-100 p-2 text-white bg-orange d-flex justify-content-around'>
         
         </div>
     </div>

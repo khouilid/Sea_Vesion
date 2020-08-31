@@ -12,7 +12,7 @@
 <div>
     <!-- info -->
     <div class="m-3">
-        <h1 onclick='back_Arrow(4)'><i class="fas fa-arrow-left"></i></h1>
+        <h1 onclick='back_Arrow(4)'><i class="fas fa-arrow-left" ></i></h1>
     </div>
     <div class='card m-3 shadow-sm '>
     <div class='text-center p-2  bg-success title_up text-light'>
@@ -75,28 +75,33 @@
             <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>B/L QTY(MT) :</p>
-                        <input class='form-control widthh m-2 ' name='QTY' type="number" name="" placeholder=' 67,438.281' id="">
+                        <input class='form-control widthh m-2 ' name='QTY' type="number" name="" placeholder=' 67,438.281' 
+                        >
                     </div>  
             </div>
             <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>DESTINATION :</p>
-                        <input class='form-control widthh m-2 ' name='DESTINATION' type="text"  placeholder=' USA' id="">
+                        <input class='form-control widthh m-2 ' name='DESTINATION' type="text"  placeholder=' USA' 
+                        >
                     </div>  
             </div>
 
             <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>ETA</p>
-                        <input class='form-control widthh m-2 ' type="date" name="ETA[]" id="">
+                        <input class='form-control widthh m-2 ' type="date" name="ETA[]" 
+                        >
                     </div>
                     <div>
                     <p class='m-0'> .</p>
-                        <input class='form-control widthh m-2' type="time" name="ETA[]" id="">
+                        <input class='form-control widthh m-2' type="time" name="ETA[]" 
+                        >
                     </div>
                     <div>
                     <p class='m-0'> .</p>
-                        <textarea class='form-control m-2' name="ETA_Comment" id="" cols="60" placeholder='Comment'></textarea>
+                        <textarea class='form-control m-2' name="ETA_Comment" 
+                         cols="60" placeholder='Comment'></textarea>
                     </div>
             
                 </div>
@@ -104,11 +109,13 @@
             <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>ARRIVAL DRAFTS</p>
-                        <input class='form-control widthh m-2 ' type="number" name="ARRIVAL_DRAFTS[]" placeholder='FORE' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="ARRIVAL_DRAFTS[]" placeholder='FORE' 
+                        >
                     </div>
                     <div>
                         <p class='m-0'>.</p>
-                        <input class='form-control widthh m-2 ' type="number" name="ARRIVAL_DRAFTS[]" placeholder='AFT' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="ARRIVAL_DRAFTS[]" placeholder='AFT' 
+                        >
                     </div>
                    
             
@@ -116,19 +123,23 @@
                 <div class='m-3 d-flex flex-wrap'>
                     <div>
                         <p class='m-0'>BUNKERS ON ARRIVAL</p>
-                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='FO' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='FO' 
+                        >
                     </div>
                     <div>
                         <p class='m-0'>.</p>
-                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='DO' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='DO' 
+                        >
                     </div>
                     <div>
                         <p class='m-0'>.</p>
-                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='FW' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='FW' 
+                        >
                     </div>
                     <div>
                         <p class='m-0'>.</p>
-                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='LO' id="">
+                        <input class='form-control widthh m-2 ' type="number" name="BUNKERS_ON_ARRIVAL[]" placeholder='LO' 
+                        >
                     </div>
                   
             

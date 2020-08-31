@@ -46,7 +46,7 @@ class Show_list Extends Get_vessel{
     }
 
 
-    public function Get_vessels_times(){
+    public function Get_vessels_times($fun){
            
             $vessel_list = $this->show_vessel_list();
 
@@ -61,8 +61,14 @@ class Show_list Extends Get_vessel{
                 echo "   <tr > <th scope=\"row\">". $vessel['ID'] ."</th>
                 <td>". $ETA ."</td>
                 <td>". $ETD ."</td>
-                <td>". $ETC ."</td>
-                <td><button onclick='Get_info(". $vessel['ID'] .")' class='btn btn-success'>Show All</button></td>  <tr >";
+                <td>". $ETC ."</td>";
+                if($fun == 1){
+                    echo "
+                    <td><button onclick='Get_info(". $vessel['ID'] .", 1)' class='btn btn-success'>Show All</button></td>  <tr >";
+                }elseif($fun == 2){
+                    echo "
+                    <td><button onclick='Get_info(". $vessel['ID'] .", 2)' class='btn btn-success'>Show All</button></td>  <tr >";
+                }
             }
     }
 }

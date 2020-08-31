@@ -9,7 +9,8 @@ class Update_info Extends DB_connection{
 
         if($type == 'ETD'){
 
-            $sql = 'UPDATE `times` SET `ETD`="'. $date .'", `Commnet_2`= "'. $comment .'" WHERE ID = '. $id .' ;';
+            $sql = 'UPDATE `times` SET `ETD`="'. $date .'", 
+            `Commnet_2`= "'. $comment .'" WHERE ID = '. $id .' ;';
 
         }elseif($type == 'ETC'){
 
@@ -20,8 +21,21 @@ class Update_info Extends DB_connection{
 
         $stmt = $this->connection()->prepare($sql);
 
-        return $stmt->execute();
+        return $stmt->execute(); 
 
 
     }
+    // update operations
+    public function update_operations($col, $val, $id){
+        $sql = "UPDATE `operations` SET `". $col ."`= ? WHERE ID =?";
+
+        $stmt = $this->connection()->prepare($sql);
+
+        return $stmt->execute([$val, $id]);
+    }
+
+
+
+
+
 }
