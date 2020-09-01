@@ -2,7 +2,7 @@
 
 <div   id='all_navire_programs' >
         <div class='sraech_input d-flex justify-content-between m-3 rounded-sm align-items-center'>
-            <input id='myInput' class='p-2' type="text" name="" id="" placeholder='Search'>
+            <input id='myInput' class='p-2' type="text" name=""  placeholder='Search'>
             <h3 class="m-0 text-center d-flex justify-content-center text-white align-items-center"><i class="fas fa-search"></i></h3>
         </div>
         <div class='w-100 bar_1 p-2 text-white'>
@@ -63,22 +63,22 @@
         <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
                 <p class='ml-3'>ETD</p>
                 <div class=' d-flex'>
-                    <input class=" m-3 w-50 form-control" type="date" name="ETD_date" id="">
-                    <input class=" m-3 w-50 form-control" type="time" name="ETD_time" id="">
+                    <input class=" m-3 w-50 form-control" type="date" name="ETD_date" >
+                    <input class=" m-3 w-50 form-control" type="time" name="ETD_time" >
                 </div>
                 <div class='m-3'>
-                    <textarea class='form-control' name="ETD_comment" id="" cols="30" rows="2" placeholder='Comment'></textarea>
+                    <textarea class='form-control' name="ETD_comment"  cols="30" rows="2" placeholder='Comment'></textarea>
                 </div>
             </div>
 
             <div class="bg-light program_card  m-4 p-2 shadow-sm rounded">
                 <p class='ml-3'>ETC</p>
                 <div class=' d-flex'>
-                    <input class=" m-3 w-50 form-control" type="date" name="ETC_date" id="">
-                    <input class=" m-3 w-50 form-control" type="time" name="ETC_time" id="">
+                    <input class=" m-3 w-50 form-control" type="date" name="ETC_date" >
+                    <input class=" m-3 w-50 form-control" type="time" name="ETC_time" >
                 </div>
                 <div class='m-3'>
-                    <textarea class='form-control' name="ETC_comment" id="" cols="30" rows="2" placeholder='Comment'></textarea>
+                    <textarea class='form-control' name="ETC_comment"  cols="30" rows="2" placeholder='Comment'></textarea>
                 </div>
             </div>
          

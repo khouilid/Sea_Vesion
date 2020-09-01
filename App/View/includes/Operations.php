@@ -36,6 +36,7 @@
 
 
 <div style='display:none;' id='operation_details'>
+  <form action="../Control/Update.operations.php" method='POST'>
     <div class='d-flex'>
        <div class='d-flex m-3'>
        <button onclick='event_doc(1)' class='btn btn-success m-2'>Event</button>
@@ -55,7 +56,6 @@
 
 
 
-  <form action="../Control/Update.operations.php" method='POST'>
   <div id='Evant' >
 
 <div class='w-100 bar_1 text-center p-2 text-white'>
@@ -378,6 +378,7 @@
     </div>
     <div class="form-check m-3">
         <input class="form-check-input" type="checkbox" name='SERVICES[]' value='DIVER' id="defaultCheck9">
+        <input hidden class="form-check-input" type="checkbox" checked name='SERVICES[]' value='1' >
         <label class="form-check-label" for="defaultCheck9">
         DIVER
         </label>
@@ -389,7 +390,7 @@
     <button type='submit' class='btn btn-success m-3'>Update</button>
 </div>
 </div>
-  </form>
+</form>
     <div id='Document' style='display:none;'>
 
     <div class='d-flex flex-wrap'>

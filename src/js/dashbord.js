@@ -49,23 +49,23 @@ function Get_info(id , fun) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("demo_1").innerHTML = this.responseText;
-            document.getElementById("demo_2").innerHTML = this.responseText;
+            if(fun == 1){
+        
+                update_program();
+                document.getElementById("demo_1").innerHTML = this.responseText;
+        
+            }else if(fun == 2){
+                
+                update_operation();
+                document.getElementById("demo_2").innerHTML = this.responseText;
+                    
+            }
        }
     };
     xmlhttp.open("GET", "../Control/Get.vessel.info.php?id=" + id, true);
-    xmlhttp.send();
-    
-    //UI functions
-    if(fun == 1){
-        
-        update_program();
-    }else if(fun == 2){
-        update_operation();
-            
-    }
-    
+    xmlhttp.send();    
 }
+
 function update_operation(){
     all_Vessel_operation.style.display ='none'
     operation_details.style.display ='block '
