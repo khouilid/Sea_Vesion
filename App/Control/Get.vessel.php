@@ -37,7 +37,7 @@ class Show_list Extends Get_vessel{
                <td>". $principal_names[0] ."</td>
                <td>". $vessel['Agent'] ."</td>
                <td>". $status ."</td>
-               <td><button onclick='show_all_info()' class='btn btn-success'>Show All</button></td>
+               <td><button onclick='Get_all_info(". $vessel['ID'] .")' class='btn btn-success'>Show All</button></td>
                </tr>
            ";
        

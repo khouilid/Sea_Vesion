@@ -41,6 +41,20 @@ function decide_cargo(sel) {
 
     }
 }
+// this function show the vessel data by ID 
+function Get_all_info(id) {
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          
+                document.getElementById("all_info").innerHTML = this.responseText;
+       }
+    };
+    xmlhttp.open("GET", "../Control/Show.vessel.info.php?id=" + id, true);
+    xmlhttp.send(); 
+    show_all_info();   
+}
 
 
 // vessel program dashbord show all vessels

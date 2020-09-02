@@ -20,8 +20,7 @@ $PILOT_OFF_2 = $_POST['PILOT_OFF_2'];
 $NUMBER_TUGS_SAILING = $_POST['NUMBER_TUGS_SAILING'];
 $SAILING_DRAFTS = $_POST['SAILING_DRAFTS'];
 $BUNKERS_ON_SAILING = $_POST['BUNKERS_ON_SAILING'];
-$NUMBER_TUGS_ENTRY = $_POST['NUMBER_TUGS_ENTRY'];
-//TODO fix services problem
+$NUMBER_TUGS_ENTRY = $_POST['NUMBER_TUGS_ENTRY'];       
 $SERVICE = $_POST['SERVICES'];
 
 
@@ -126,7 +125,7 @@ if(!empty($BUNKERS_ON_SAILING[0])){
 if(!empty($SERVICE[0])){
 
     $SERVICE = implode('/', $SERVICE);
-    $update->update_operations('SERVICE', $SERVICE, $id);
+    $update->update_operations('SERVICES', $SERVICE, $id);
 
 }
 if(!empty($NUMBER_TUGS_ENTRY[0])){
@@ -145,7 +144,7 @@ if(!empty($GANGWAY_READY[0])){
 
 
 
-// header('location: ../View/Dashbord.php');
+header('location: ../View/Dashbord.php');
 
 
 
