@@ -113,7 +113,7 @@ seeing what needs to be done.</h4>
 
 <div  id="Pop-event-TwoW" class="pop-up-add_events">
         <div class="pop-up-add_event m-auto">
-            <form method="POST" action="">
+            <form method="POST" action="App\Control\Login.system.php">
                 <div class="clouse" id='clouse'>
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
                          class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -129,11 +129,11 @@ seeing what needs to be done.</h4>
                 <div class='sign_in_inputs'>
                   <div class="sign_in_input">
                     <p class="m-0">E-mail</p>
-                    <input type="email" name="" id="" placeholder="Enter your email">
+                    <input type="email" name="mail" id="" placeholder="Enter your email">
                   </div>
                   <div class="sign_in_input mt-3">
                     <p class="m-0">Password</p>
-                    <input type="password" name="" id="" placeholder="Enter your password">
+                    <input type="password" name="password" id="" placeholder="Enter your password">
                   </div>
                 </div>
                 

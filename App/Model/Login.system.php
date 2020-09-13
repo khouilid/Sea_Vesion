@@ -4,25 +4,23 @@ include '../../Config/DB_connection.php';
 
 
 class Log_in Extends DB_connection{
-    private $mail;
-    private $password;
+    public $mail;
+    public $password;
 
     public function __construct($mail, $password){
         $this->mail = $mail;
         $this->password = $password;
     }
-
-    public function log_IN(){
-        $sql = "SELECT * FROM `users` WHERE mail = ? and password = ?";
-        $stmt = $this->connection()->prepare($sql);
-        $stmt = $stmt->execute([$this->mail , $this->password]);
-        print_r( $stmt->fetchAll());
+    //check if this accent exicte
+    public function log(){
+        $sql = "SELECT COUNT(ID) AS IS_USER FROM `users` WHERE mail = '". $this->mail ."' AND password = '". $this->password ."'";
+        $stmt = $this->connection()->query($sql);
+        $resutl = $stmt->fetchAll();
+        return $resutl[0]['IS_USER'];
+        
        
     }
 
 
 
 }
-
-$test = new Log_in('dfhdj', 'lkdsfj');
-$r = $test->log_IN();

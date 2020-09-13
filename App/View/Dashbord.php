@@ -1,4 +1,12 @@
-<?php include '../Control/Get.vessel.php'; ?>
+<?php 
+include '../Control/Get.vessel.php'; 
+session_start();
+if(!isset($_SESSION['is_user'])){
+    header('location: ../../index.php?m=not_log ');  
+}
+
+
+?>
 
 
 <!DOCTYPE html>
