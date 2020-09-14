@@ -14,14 +14,14 @@ $update = new Update_info;
 
 if($ETC_time != ''&& $ETC_date != ''){
     //convert array unto srting
-    $ETC = implode(' à ' , [$ETC_date, $ETC_time]);
+    $ETC = implode(' At ' , [$ETC_date, $ETC_time]);
     //call the method form update;
     $update->update_date($id ,'ETC', $ETC ,$ETC_Comment);
     
     
 }elseif($ETD_time != ''&& $ETD_date != ''){
     //convert array unto srting
-    $ETD = implode(' à ' , [$ETD_date, $ETD_time]);
+    $ETD = implode(' At ' , [$ETD_date, $ETD_time]);
     //call the method form update;
     $update->update_date($id ,'ETD', $ETD ,$ETD_Comment);
 

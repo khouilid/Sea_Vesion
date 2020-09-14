@@ -24,7 +24,7 @@ if(isset($Agent, $Principals_names,$Principal_mails,$Vessel,$Port,$IMPORT_EXPORT
     
     //collect data : arrays into strings
     $Principals = implode(',mail:', [implode(',', $Principals_names), implode(',' , $Principal_mails)]);
-    $ETA = implode(' à ', $ETA);
+    $ETA = implode(' At ', $ETA);
     $ARRIVAL_DRAFTS = implode('/', $ARRIVAL_DRAFTS);
     $BUNKERS_ON_ARRIVAL = implode('/',$BUNKERS_ON_ARRIVAL);
     //create new_vessel object
