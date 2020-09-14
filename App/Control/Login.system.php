@@ -12,10 +12,10 @@ $password = $_POST['password'];
 $lets_log_in = new Log_in($mail, $password);
 $result = $lets_log_in->log();
 
-if($result == 0){
-    header('location: ../../index.php?m=not_user ');
-}elseif($result == 1){
+if($result == 1){
     header('location: ../View/Dashbord.php');
     session_start();
     $_SESSION['is_user'] = true;
+}else{
+    header('location: ../../index.php?m=not_user ');
 }
