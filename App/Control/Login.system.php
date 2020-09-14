@@ -3,7 +3,6 @@
 include '../Model/Login.system.php';
 
 
-
 $mail = $_POST['mail'];
 $password = $_POST['password'];
 

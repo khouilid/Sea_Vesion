@@ -10,70 +10,70 @@ if(isset($_GET['id'])){
     //convert data from string unto array
     //check if the data is set
     $ARRIVAL_DRAFTS = $vessel[0]["ARRIVAL_DRAFTS"] != "" ? explode('/', $vessel[0]["ARRIVAL_DRAFTS"]) 
-    : ['Not posted yet','Not posted yet'];
+    : ['-','-'];
 
     $SAILING_DRAFTS = $vessel[0]["SAILING_DRAFTS"] != "" ? explode('/', $vessel[0]["SAILING_DRAFTS"]) 
-    : ['Not posted yet','Not posted yet'];
+    : ['-','-'];
     
 
     $BUNKERS_ON_ARRIVAL = $vessel[0]["BUNKERS_ON_ARRIVAL"] != "" ? explode('/', $vessel[0]["BUNKERS_ON_ARRIVAL"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
 
     $BUNKERS_ON_SAILING = $vessel[0]["BUNKERS_ON_SAILING"] != "" ? explode('/', $vessel[0]["BUNKERS_ON_SAILING"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
     
 
     $EOSP = $vessel[0]["EOSP"] != "" ? explode('/', $vessel[0]["EOSP"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
     
     
     $DROPPED_ANCHORAGE = $vessel[0]["DROPPED_ANCHORAGE"] != "" ? explode('/', $vessel[0]["DROPPED_ANCHORAGE"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
 
   
     $HAVED_UP_ANCHOR = $vessel[0]["HAVED_UP_ANCHOR"] != "" ? explode('/', $vessel[0]["HAVED_UP_ANCHOR"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
  
     $PILOT_ON_BOARD_1 = $vessel[0]["PILOT_ON_BOARD_1"] != "" ? explode('/', $vessel[0]["PILOT_ON_BOARD_1"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
 
     $FIRST_LINE_ASHORE = $vessel[0]["FIRST_LINE_ASHORE"] != "" ? explode('/', $vessel[0]["FIRST_LINE_ASHORE"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
   
     $ALL_FAST = $vessel[0]["ALL_FAST"] != "" ? explode('/', $vessel[0]["ALL_FAST"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet']; 
+    : ['-','-','-','-']; 
 
 
     $PILOT_OFF_1 = $vessel[0]["PILOT_OFF_1"] != "" ? explode('/', $vessel[0]["PILOT_OFF_1"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];   
+    : ['-','-','-','-'];   
     
     $GANGWAY_READY = $vessel[0]["GANGWAY_READY"] != "" ? explode('/', $vessel[0]["GANGWAY_READY"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
 
     $COMMENCED_DISCHARGING = $vessel[0]["COMMENCED_DISCHARGING"] != "" ? explode('/', $vessel[0]["COMMENCED_DISCHARGING"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];  
+    : ['-','-','-','-'];  
 
     $COMPLETED_DISCHARGING = $vessel[0]["COMPLETED_DISCHARGING"] != "" ? explode('/', $vessel[0]["COMPLETED_DISCHARGING"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
 
  
     $PILOT_ON_BOARD_2 = $vessel[0]["PILOT_ON_BOARD_2"] != "" ? explode('/', $vessel[0]["PILOT_ON_BOARD_2"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
 
 
     $SAILING = $vessel[0]["SAILING"] != "" ? explode('/', $vessel[0]["SAILING"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
 
 
     $PILOT_OFF_2 = $vessel[0]["PILOT_OFF_2"] != "" ? explode('/', $vessel[0]["PILOT_OFF_2"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
 
    
     $NUMBER_TUGS_ENTRY = $vessel[0]["NUMBER_TUGS_ENTRY"] != "" ? explode('/', $vessel[0]["NUMBER_TUGS_ENTRY"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
  
     $NUMBER_TUGS_SAILING = $vessel[0]["NUMBER_TUGS_SAILING"] != "" ? explode('/', $vessel[0]["NUMBER_TUGS_SAILING"]) 
-    : ['Not posted yet','','Not posted yet','Not posted yet'];
+    : ['-','-','-','-'];
  
  
     $SERVICES = explode('/', $vessel[0]['SERVICES']);
