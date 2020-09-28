@@ -38,7 +38,7 @@
 
 
 <div style='display:none;'  id='N_program' >
-    <div class='w-100 m-3 bg-light rounded shadow-sm p-3 d-flex align-items-center'>
+    <div class='m-3 bg-light rounded shadow-sm p-3 d-flex align-items-center'>
         <h3 class='m-0'><i class="far fa-check-circle mr-3 ml-3 text-success"></i></h3>
         <p class='m-0'>YOU CAN PRESS UPDATE IF YOU MADE ANY CHANGES  </p>
         <h3 class='m-0'><i class="text-success far fa-check-circle mr-3 ml-3"></i></h3>

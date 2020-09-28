@@ -118,6 +118,7 @@ function back_Arrow(v){
 function show_all_info(){
     info.style.display = 'none'
     all_info.style.display = 'block'
+    // document.getElementById('search_input').style.display = 'none !important';
 
 }
 
@@ -188,6 +189,8 @@ function event_doc(btn){
     }else if(btn == 2){
         Evant.style.display = 'none';
         Document.style.display = 'block';
+      
+
     }
 }
 

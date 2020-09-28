@@ -1,4 +1,4 @@
-<div class='sraech_input d-flex justify-content-between m-3 rounded-sm align-items-center'>
+<div id='search_input' class='sraech_input d-flex justify-content-between m-3 rounded-sm align-items-center'>
     <input id="myInput2" class='p-2' type="text" name="" id="" placeholder='Search'>
     <h3 class="m-0 text-center d-flex justify-content-center text-white align-items-center"><i class="fas fa-search"></i></h3>
 </div>
