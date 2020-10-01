@@ -16,7 +16,8 @@ if(isset($_GET['id'])){
         <h6>Vessel: ". $vessel[0]['Name'] ."</h6>
        ";
 
-
+    session_start();
+    $_SESSION['v_id'] = $vessel[0]['ID'];
   
 }
 

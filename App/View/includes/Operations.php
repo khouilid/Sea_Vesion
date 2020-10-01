@@ -394,12 +394,11 @@
     <div id='Document' style='display:none;'>
 
         <div class='d-flex flex-wrap'>
-            <div class='d-flex bg-light rounded-md m-3 p-2 shadow-sm flex-wrap files align-items-center'> 
-            <h3><i class="fas fa-file-excel"></i></h3>
-            <p class='m-2'>PORT LOG VIERGE.XLSX</p>
-            <h3 class='btn'><i class="fas fa-download"></i></h3>
-        </div>
-        
+        <?php
+            $fil = new display_files;
+             
+        ?>
+
         </div>
 
 
