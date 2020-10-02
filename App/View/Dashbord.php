@@ -1,10 +1,11 @@
 <?php 
-include '../Control/Get.vessel.php'; 
-require '../Control/display_files.php';
+
 session_start();
 if(!isset($_SESSION['is_user'])){
-    header('location: ../../index.php?m=not_log ');  
+    header('location: ../../index.php?m=not_log');  
 }
+include '../Control/Get.vessel.php'; 
+// require_once '../Control/display_files.php';
 
 
 ?>

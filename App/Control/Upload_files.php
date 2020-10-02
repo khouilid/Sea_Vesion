@@ -25,7 +25,7 @@ if(isset($_POST['files'])){
             
             $up = new Upload_file;
             $up = $up->upload($id, $destination);
-            unset($_SESSION["v_id"]);
+            // unset($_SESSION["v_id"]);
             header('location: ../View/Dashbord.php?msg=fileUp');
 
         

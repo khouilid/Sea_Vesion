@@ -1,12 +1,11 @@
 <?php
 include_once '../Model/Download_files.php';
 
-Class display_files {
-    public function __construct(){
-        $id = $_SESSION['v_id'];
+Class display_files Extends Download_file {
+    public function display(){
+        $id = $_GET['v_id'];
 
-        $files = new Download_file  ;
-        $files = $files->Download($id);
+        $files = $this->Download($id);
 
         foreach($files as $file){
 
@@ -20,8 +19,10 @@ Class display_files {
                         </div>
                     </form>';
         }
-        unset($_SESSION["v_id"]);
+     
     }
 }
+$fil = new display_files;
+$dis = $fil->display();
 
 ?>

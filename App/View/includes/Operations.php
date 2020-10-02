@@ -40,7 +40,8 @@
     <div class='d-flex'>
        <div class='d-flex m-3'>
        <button onclick='event_doc(1)' type='button' class='btn btn-success m-2'>Event</button>
-        <button onclick='event_doc(2)' type='button' class='btn btn-success m-2'>Document</button>
+       <input type="text" hidden id='v_i'>
+        <button onclick='Display_files()'  type='button' class='btn btn-success m-2'>Document</button>
        </div>
         <div class=' m-3 bg-light rounded shadow-sm p-2 d-flex align-items-center'>
         <h3 class='m-0'><i class="far fa-check-circle mr-3 ml-3 text-success"></i></h3>
@@ -393,11 +394,12 @@
 </form>
     <div id='Document' style='display:none;'>
 
-        <div class='d-flex flex-wrap'>
-        <?php
-            $fil = new display_files;
-             
-        ?>
+        <div id='files' class='d-flex flex-wrap'>
+       
+
+
+
+
 
         </div>
 
@@ -405,19 +407,19 @@
 
 
               <form action="../Control/Upload_files.php" method='POST' enctype="multipart/form-data">
-         <div class="d-flex justify-content-center">
-                <div class="input-group upload_files w-50 w-md-100">
-                        <div class="custom-file ">
-                            <input type="file" name='file' class="custom-file-input" id="inputGroupFile04"  aria-describedby="inputGroupFileAddon04">
-                            <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-                            <input type='number' hidden id='v_id'>
-                        </div>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="submit" name='files' id="inputGroupFileAddon04">Button</button>
-                        </div>
+                    <div class="d-flex justify-content-center">
+                            <div class="input-group upload_files w-50 w-md-100">
+                                    <div class="custom-file ">
+                                        <input type="file" name='file' class="custom-file-input" id="inputGroupFile04"  aria-describedby="inputGroupFileAddon04">
+                                        <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                                        <input type='number' hidden id='v_id'>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit" name='files' id="inputGroupFileAddon04">Button</button>
+                                    </div>
+                                </div>
+                        
                     </div>
-              
-         </div>
               </form>
 
     </div>

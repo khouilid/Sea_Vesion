@@ -57,6 +57,21 @@ function Get_all_info(id) {
 }
 
 
+function Display_files() {
+    let id = document.getElementById("v_i").value;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          
+                document.getElementById("files").innerHTML = this.responseText;
+       }
+    };
+    xmlhttp.open("GET", "../Control/display_files.php?v_id=" + id, true);
+    xmlhttp.send(); 
+    event_doc(2); 
+}
+
+
 // vessel program dashbord show all vessels
 function Get_info(id , fun) {
 
