@@ -40,7 +40,7 @@
     <div class='d-flex'>
        <div class='d-flex m-3'>
        <button onclick='event_doc(1)' type='button' class='btn btn-success m-2'>Event</button>
-       <input type="text" hidden id='v_i'>
+       
         <button onclick='Display_files()'  type='button' class='btn btn-success m-2'>Document</button>
        </div>
         <div class=' m-3 bg-light rounded shadow-sm p-2 d-flex align-items-center'>
