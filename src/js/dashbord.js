@@ -31,7 +31,7 @@ function add_principal() {
 
 // show cargo when user chose if inport or export
 function decide_cargo(sel) {
-    let option_1 = `<option value="FERTILIZER">FERTILIZER</option><option value="PHOSPHATE">PHOSPHATE </option>`;
+    let option_1 = `<option value="FERTILIZER">FERTILIZER</option><option value="PHOSPHATE">PHOSPHATE </option><option value="TANKER">TANKER </option>`;
     let option_2 = `<option value="SULPHUR">SULPHUR</option>`;
 
     if(sel == 2) {
@@ -54,6 +54,21 @@ function Get_all_info(id) {
     xmlhttp.open("GET", "../Control/Show.vessel.info.php?id=" + id, true);
     xmlhttp.send(); 
     show_all_info();   
+}
+
+function DailyLineUps(type, id) {
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          
+                document.getElementById('lineUpContent').innerHTML = this.responseText;
+       }
+    };
+    xmlhttp.open("GET", "../Control/Daily.LineUp.php?type=" + type , true);
+    xmlhttp.send(); 
+    event_doc(id);
+     
 }
 
 
