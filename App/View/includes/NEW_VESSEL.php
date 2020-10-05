@@ -53,7 +53,14 @@
            
             <div class="m-3">
                 <p class="m-0">Port</p>
-                <input type="text" name="Port" class="form-control widthh  m-0" placeholder='Port'>
+                <select class="custom-select widthh" name="Port" >
+                    <option selected disabled>Ports</option>
+                    <option value="CASABLANCA">CASABLANCA</option>
+                    <option value="JORF LASFAR">JORF LASFAR</option>
+                    <option value="SAFI">SAFI</option>
+                    <option value="LAAYOUNE">LAAYOUNE</option>
+                    
+                </select>
             </div>
             <div class='m-3'>
             <p class="m-0">IMPORT/EXPORT</p>

@@ -28,11 +28,23 @@ function add_principal() {
 };
 
 
-
+//TODO fell all option
 // show cargo when user chose if inport or export
 function decide_cargo(sel) {
-    let option_1 = `<option value="FERTILIZER">FERTILIZER</option><option value="PHOSPHATE">PHOSPHATE </option><option value="TANKER">TANKER </option>`;
-    let option_2 = `<option value="SULPHUR">SULPHUR</option>`;
+    let option_1 = `<option value="FERTILIZER">FERTILIZER</option>
+                    <option value="PHOSPHATE">PHOSPHATE </option>
+                    
+                    `;
+
+    let option_2 = `<option value="SULPHUR">SULPHUR</option>
+                    <option value="BARLEY">BARLEY</option>;
+                    <option value="WHEAT">WHEAT</option>;
+                    <option value="SUGAR">SUGAR</option>;
+                    <option value="CORN">CORN</option>;
+                    <option value="PETCKOK">PETCKOK</option>;
+                    <option value="LAB">LAB</option>;
+                    <option value="UREA + AMMONOTRAT">UREA + AMMONOTRAT</option>;
+                    <option value="PHOSPHATIDE">PHOSPHATIDE</option>`;
 
     if(sel == 2) {
         document.getElementById('cargo').innerHTML = option_1;
