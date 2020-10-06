@@ -19,8 +19,9 @@ class LineUps Extends DB_connection{
     public function SULPHUR(){
 
         $sql = "SELECT * FROM `vessels` v 
-        INNER JOIN `times` t on v.ID = t.ID 
-        WHERE v.Cargo = 'SULPHUR'";
+                INNER JOIN `times` t 
+                on v.ID = t.ID 
+                WHERE v.Cargo = 'SULPHUR'";
         
         $stmt = $this->connection()->query($sql);
  
@@ -30,9 +31,12 @@ class LineUps Extends DB_connection{
     public function Tanker(){
 
         $sql = "SELECT * FROM `vessels` v 
-        INNER JOIN `times` t on v.ID = t.ID 
-        WHERE v.Cargo = 'TANKER'";
-        
+                INNER JOIN `times` t 
+                on v.ID = t.ID 
+                WHERE v.Cargo = 'SULFURIC ACID' 
+                OR v.Cargo = 'AMMONIA' 
+                OR v.Cargo ='PHOS ACID'";
+    
         $stmt = $this->connection()->query($sql);
  
         return $stmt->fetchAll();
