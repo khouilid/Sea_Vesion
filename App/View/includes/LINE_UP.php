@@ -6,8 +6,8 @@
             <button onclick='DailyLineUps("SULPHUR", 6)'  class='btn btn-success m-2'>line up soufre</button>
             <button onclick='DailyLineUps("Tanker", 9)'  class='btn btn-success m-2'>line up tankers</button>
             
-            <button onclick='event_doc(4)' class='btn btn-success m-2'>line up general</button>
-            <button onclick='event_doc(7)'  class='btn btn-success m-2'>line up grain</button>
+            <button onclick='DailyLineUps("General", 4)' class='btn btn-success m-2'>line up general</button>
+            <button onclick='DailyLineUps("Grain", 7)'  class='btn btn-success m-2'>line up grain</button>
             <button onclick='event_doc(3)'  class='btn btn-success m-2'>Line up at bulk terminals at Jorf Lasfar</button>
 
             <div class="input-group-prepend">

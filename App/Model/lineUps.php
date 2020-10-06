@@ -41,4 +41,44 @@ class LineUps Extends DB_connection{
  
         return $stmt->fetchAll();
     }
+
+
+
+    public function Grain(){
+
+        $sql = "SELECT * FROM `vessels` v 
+                INNER JOIN `times` t 
+                on v.ID = t.ID 
+                WHERE v.Cargo = 'BARLEY' 
+                OR v.Cargo = 'WHEAT' 
+                OR v.Cargo ='SUGAR'
+                OR v.Cargo ='CORN'
+                ORDER BY v.ID DESC
+                ";
+
+    
+        $stmt = $this->connection()->query($sql);
+ 
+        return $stmt->fetchAll();
+    }
+
+    public function General(){
+
+        $sql = "SELECT * FROM `vessels` v 
+                INNER JOIN `times` t 
+                on v.ID = t.ID 
+                WHERE v.Cargo = 'UREA + AMMONOTRAT' 
+                OR v.Cargo = 'PETCKOK' 
+                OR v.Cargo ='LAB'
+                OR v.Cargo ='SULFATE AMMONIUM'
+                OR v.Cargo ='SBM'
+                OR v.Cargo ='COAL'
+                OR v.Cargo ='SBPP'
+                OR v.Cargo ='SCRAP'
+                ORDER BY v.ID DESC
+                ";
+        $stmt = $this->connection()->query($sql);
+ 
+        return $stmt->fetchAll();
+    }
 }
