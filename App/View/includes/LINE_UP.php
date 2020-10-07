@@ -8,7 +8,7 @@
             
             <button onclick='DailyLineUps("General", 4)' class='btn btn-success m-2'>line up general</button>
             <button onclick='DailyLineUps("Grain", 7)'  class='btn btn-success m-2'>line up grain</button>
-            <button onclick='event_doc(3)'  class='btn btn-success m-2'>Line up at bulk terminals at Jorf Lasfar</button>
+            <button onclick='DailyLineUps("Bulk_terminal", 3)'  class='btn btn-success m-2'>Line up at bulk terminals at Jorf Lasfar</button>
 
             <div class="input-group-prepend">
             
@@ -16,11 +16,11 @@
                 
                 <div class="dropdown-menu">
 
-                    <a class="dropdown-item" href="#">CASALBANCA</a>
-                    <a class="dropdown-item" href="#">SAFI</a>
-                    <a class="dropdown-item" href="#">LAAYOUNE</a>
-                    <a class="dropdown-item" href="#">JORF LASFAR FERTILIZER</a>
-                    <a class="dropdown-item" href="#">JORF LASFAR OTHER BERTHS</a>         
+                    <p class="dropdown-item" onclick='DailyLineUps("CASABLANCA", 3)'>CASABLANCA</p>
+                    <p class="dropdown-item" onclick='DailyLineUps("SAFI", 3)'>SAFI</p>
+                    <p class="dropdown-item" onclick='DailyLineUps("LAAYOUNE", 3)'>LAAYOUNE</p>
+                    <p class="dropdown-item" onclick='DailyLineUps("LJORF_FERT", 3)'>JORF LASFAR FERTILIZER</p>
+                    <p class="dropdown-item" onclick='DailyLineUps("LJORF_NOT_FERT", 3)'>JORF LASFAR OTHER BERTHS</p>         
                 
                 </div>
 
@@ -42,7 +42,7 @@
 <div id='lineUpContent'>
     <!-- after we get the data from DB we will loop truth them and show it in the table  -->
 </div>
-<div class="m-4 " ><button class="btn float-right btn-success">Download</button></div>
+<!-- <div class="m-4 " ><button class="btn float-right btn-success">Download</button></div> -->
 
 
 
