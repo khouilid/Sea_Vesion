@@ -46,6 +46,15 @@
             <h5>informations</h5>
         </div>
         <div class='d-flex flex-wrap'>
+        <div class='m-3'>
+            <p class="m-0">Work with</p>
+                <select class="custom-select widthh" name='WORK_WITH'>
+                    <!-- <option ></option> -->
+                    <option value="1" selected>Us</option>
+                    <option value="2">Other agence</option>
+                    
+                </select>
+            </div>
             <div class="m-3">
                 <p class="m-0">Vessel</p>
                 <input type="text" name="Vessel" class="form-control widthh  m-0" placeholder='Vessel name'>

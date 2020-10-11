@@ -17,10 +17,11 @@ class new_vessel Extends DB_connection{
 
     public $ARRIVAL_DRAFTS;
     public $BUNKERS_ON_ARRIVAL;
+    public $WORK_WITH;
 
 
     public function __construct($Agent,$Principals,$Vessel,$Port,$IMPORT_EXPORT,$CARGO,$QTY,$DESTINATION,
-                                  $ETA,$ETA_Comment,$ARRIVAL_DRAFTS,$BUNKERS_ON_ARRIVAL){
+                                  $ETA,$ETA_Comment,$ARRIVAL_DRAFTS,$BUNKERS_ON_ARRIVAL,$WORK_WITH){
         $this->Agent = $Agent;
         $this->Principals = $Principals;
         $this->Vessel = $Vessel;
@@ -33,6 +34,7 @@ class new_vessel Extends DB_connection{
         $this->ETA_Comment = $ETA_Comment;
         $this->ARRIVAL_DRAFTS = $ARRIVAL_DRAFTS;
         $this->BUNKERS_ON_ARRIVAL = $BUNKERS_ON_ARRIVAL;
+        $this->WORK_WITH = $WORK_WITH;
     }
 
     // this method return last id from db
@@ -47,11 +49,11 @@ class new_vessel Extends DB_connection{
     // insert principal data into db 
     private function insert_vessel(){
 
-        $sql = 'INSERT INTO `vessels`(`Name`, `Port`, `Qty`, `Cargo`, `Desti`, `Principals` , `IMPORT_EXPORT` ,`Agent`) VALUES (?,?,?,?,?,?,?,?);';
+        $sql = 'INSERT INTO `vessels`(`Name`, `Port`, `Qty`, `Cargo`, `Desti`, `Principals` , `IMPORT_EXPORT` ,`Agent`,`WORK_WITH`) VALUES (?,?,?,?,?,?,?,?,?);';
 
         $stmt = $this->connection()->prepare($sql);
 
-        return $stmt->execute([$this->Vessel, $this->Port,$this->QTY,$this->CARGO,$this->DESTINATION,$this->Principals,$this->IMPORT_EXPORT, $this->Agent]);
+        return $stmt->execute([$this->Vessel, $this->Port,$this->QTY,$this->CARGO,$this->DESTINATION,$this->Principals,$this->IMPORT_EXPORT, $this->Agent, $this->WORK_WITH]);
 
 
 

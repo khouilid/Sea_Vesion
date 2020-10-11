@@ -16,6 +16,7 @@ $Principal_mails = $_POST['Principal_mails'];
 $ETA = $_POST['ETA'];
 $ARRIVAL_DRAFTS = $_POST['ARRIVAL_DRAFTS'];
 $BUNKERS_ON_ARRIVAL = $_POST['BUNKERS_ON_ARRIVAL'];
+$WORK_WITH = $_POST['WORK_WITH'];
 
 
 //chek if all data is set
@@ -29,7 +30,7 @@ if(isset($Agent, $Principals_names,$Principal_mails,$Vessel,$Port,$IMPORT_EXPORT
     $BUNKERS_ON_ARRIVAL = implode('/',$BUNKERS_ON_ARRIVAL);
     //create new_vessel object
     $insert_vessel = new new_vessel($Agent, $Principals,$Vessel,$Port,
-    $IMPORT_EXPORT,$CARGO,$QTY,$DESTINATION,$ETA,$ETA_Comment,$ARRIVAL_DRAFTS,$BUNKERS_ON_ARRIVAL);
+    $IMPORT_EXPORT,$CARGO,$QTY,$DESTINATION,$ETA,$ETA_Comment,$ARRIVAL_DRAFTS,$BUNKERS_ON_ARRIVAL,$WORK_WITH);
     //insert all data into the DB
     $post = $insert_vessel->insert_new_vessel();
 

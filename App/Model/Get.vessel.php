@@ -10,7 +10,7 @@ class Get_vessel Extends DB_connection{
         $sql = 'SELECT v.ID, v.Name, v.Port, v.Principals, v.Agent, t.ETA ,t.ETD, t.ETC  
                 FROM `vessels` v 
                 INNER JOIN `times` t on v.ID = t.ID 
-                AND v.ID > 17 
+                AND v.ID > 17 AND v.WORK_WITH = 1
                 ORDER BY v.ID DESC';
 
         $stmt = $this->connection()->query($sql);
@@ -23,7 +23,7 @@ class Get_vessel Extends DB_connection{
         $sql = 'SELECT * FROM `vessels` v 
                 INNER JOIN times t on v.ID = t.ID 
                 INNER JOIN operations o on v.ID = o.ID 
-                WHERE v.ID = '. $id .';';
+                WHERE v.ID = '. $id .' AND v.WORK_WITH = 1;';
 
         $stmt = $this->connection()->query($sql);
         

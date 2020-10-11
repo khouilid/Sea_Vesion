@@ -58,7 +58,7 @@ function decide_cargo(sel) {
                     
                     `;
 
-    if(sel == 2) {
+    if(sel == 4) {
         document.getElementById('cargo').innerHTML = option_1;
     }else if (sel == 1) {
         document.getElementById('cargo').innerHTML = option_2;
